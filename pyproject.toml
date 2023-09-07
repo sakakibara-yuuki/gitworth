@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitworth"
+authors = [
+    {name = "sakakibara yuuki", email = "09879@pacific-systems.co.jp"},
+]
+description = "This is evaluate of git commit"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Framework :: Torch",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+  "GitPython",
+  "torchrl",
+]
+
+dynamic = ["version"]
